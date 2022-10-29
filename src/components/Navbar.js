@@ -136,6 +136,12 @@ const Wrapper = styled.header`
         }
     }
 
+    .resize-animation-stopper {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+    }
+
     @media(min-width: 35rem) and (max-width: 55rem) {
         .nav-number {
             display: none;
@@ -143,6 +149,7 @@ const Wrapper = styled.header`
     }
 
     @media (prefers-color-scheme: dark) {
+        .primary-navigation-hidden,
         .primary-navigation {
             background-color: var(--clr-light-sapphire);
         }
