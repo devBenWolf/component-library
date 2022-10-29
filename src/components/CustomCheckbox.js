@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 const CustomCheckbox = () => {
     return ( 
-        <Wrapper for="name">
-        <label className="input-label">
+        <Wrapper>
+        <label>
             <input 
                 type="checkbox"
-                name="name"
+                name="customCheckbox"
             />Custom Checkbox Component
             </label>
         </Wrapper>
@@ -17,7 +17,7 @@ export default CustomCheckbox;
 
 const Wrapper = styled.div`
 
-    .input-label {
+    label {
         width: 40rem;
         font-family: system-ui, sans-serif;
         font-size: 1.5rem;
@@ -25,7 +25,7 @@ const Wrapper = styled.div`
         line-height: 1.1;
         display: grid;
         grid-template-columns: 1em auto;
-        gap: 2em;
+        gap: 2rem;
         text-align: left;
         margin-top: 2em;
         font-family: var(--font-normal-roboto);
@@ -35,7 +35,7 @@ const Wrapper = styled.div`
     input[type="checkbox"] {
         appearance: none;
         /* For iOS < 15 to remove gradient background */
-        background-color: #fff;
+        background-color: var(--clr-light-blue);
         /* Not removed via appearance */
         margin: 0;
         font: inherit;
@@ -55,8 +55,8 @@ const Wrapper = styled.div`
         height: 0.65em;
         transform: scale(0);
         transition: 120ms transform ease-in-out;
-        box-shadow: inset 1em 1em #326273;
-        background-color: CanvasText;
+        box-shadow: inset 1em 1em white;
+
 
         /******* checkmark *******/
         transform-origin: bottom left;
@@ -70,7 +70,6 @@ const Wrapper = styled.div`
     }
 
     input[type="checkbox"]:focus {
-        outline: max(2px, 0.15em) solid lightpurple;
         outline-offset: max(2px, 0.15em);
     }
 
