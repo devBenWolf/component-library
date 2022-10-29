@@ -3,13 +3,11 @@ import styled from "styled-components";
 // Checkbox component
 const Checkbox = () => {
     return ( 
-        <Wrapper for="name">
-        <label className="input-label">
+        <Wrapper>
+        <label>
             <input 
                 type="checkbox"
                 name="checkbox"
-            //  value={value}
-            className = "my-class"
             />Checkbox Component
         </label>
         </Wrapper>
@@ -19,14 +17,12 @@ const Checkbox = () => {
 export default Checkbox;
 
 const Wrapper = styled.div`
-    .input-label {
-        font-family: system-ui, sans-serif;
+    label {
         font-size: 1.5rem;
         font-weight: bold;
         line-height: 1.1;
-        display: grid;
-        grid-template-columns: 1em auto;
-        gap: 2em;
+        display: flex;
+        gap: 2rem;
         width: 40rem;
         text-align: left;
         margin-top: 2rem;
@@ -35,7 +31,7 @@ const Wrapper = styled.div`
     }
 
     input {
-        accent-color: #326273;
+        accent-color: var(--clr-light-blue);
         transform: scale(1.2);
         width: 2rem;
         margin: 0;
