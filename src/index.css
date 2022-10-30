@@ -25,11 +25,11 @@
   /* Prussian Blue palette */
   --clr-dark-blue  :    hsl(217, 44%, 16%);
   --clr-medium-blue:    hsl(216, 44%, 36%);
-  --clr-light-blue :    hsl(216, 44%, 56%);
+  --clr-light-blue :    hsl(216, 44%, 60%);
   /* Iris Blue palette */
-  --clr-dark-blue  :    hsl(232, 64%, 28%);
-  --clr-medium-blue:    hsl(232, 64%, 48%);
-  --clr-light-blue :    hsl(232, 64%, 68%);
+  --clr-dark-iris-blue  :    hsl(232, 64%, 28%);
+  --clr-medium-iris-blue:    hsl(232, 64%, 48%);
+  --clr-light-iris-blue :    hsl(232, 64%, 68%);
 
 
   --clr-white      :    hsl(0, 0%, 100%);
@@ -48,5 +48,14 @@ html {
 body {
   min-height: 100vh;
   overflow-x: hidden;
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-white);
+}
+
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
